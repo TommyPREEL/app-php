@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'curl http://localhost:8089/create_db'
+                sh 'curl http://formation.ludovic.tech:8089/create_db.php'
             }
         }
     }
