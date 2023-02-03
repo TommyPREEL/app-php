@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'curl localhost:9000/create_db'
+                sh 'curl http://localhost:8089/create_db'
             }
         }
     }
