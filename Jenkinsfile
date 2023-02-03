@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'docker-compose up'
+                sh 'curl localhost:9000/create_db'
             }
         }
     }
